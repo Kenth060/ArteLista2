@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/tam4"
+    android:padding="@dimen/margen5"
+    android:background="@drawable/shapebtn">
+
+    <TextView
+        android:id="@+id/tvHoraEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margen2"
+        android:text="00:00"
+        android:textAlignment="center"
+        android:textColor="@color/Azul_Fondo"
+        android:textSize="@dimen/tamtexto2"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+    <TextView
+        android:id="@+id/tvEventoAM"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margen2"
+        android:text="A.M."
+        android:textAlignment="center"
+        android:textColor="@color/Azul_Fondo"
+        android:textSize="@dimen/tamtexto2"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintLeft_toLeftOf="@id/tvHoraEvento"
+        app:layout_constraintTop_toBottomOf="@id/tvHoraEvento">
+    </TextView>
+    <TextView
+        android:id="@+id/tvTituloEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margen2"
+        android:text="@string/strTituloEvento"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tamtexto2"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/margen5"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvHoraEvento">
+    </TextView>
+    <TextView
+        android:id="@+id/tvCategoriaEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margen2"
+        android:text="@string/strCategoriaEvento"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tamtexto2"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloEvento"
+        app:layout_constraintLeft_toLeftOf="@id/tvTituloEvento">
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

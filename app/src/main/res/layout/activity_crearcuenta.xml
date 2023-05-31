@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Azul_Fondo"
+    android:fitsSystemWindows="true"
+    tools:context=".Crearcuenta">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbCrearCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Azul_Claro"></androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="324dp"
+        android:layout_height="49dp"
+        android:background="#DDDDDD"
+        android:drawableLeft="@drawable/ic_user"
+        android:ems="10"
+        android:fontFamily="@font/balthazar"
+        android:hint="@string/hint_correo"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtCrearContraseña"
+        android:layout_width="324dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="396dp"
+        android:background="#DDDDDD"
+        android:drawableLeft="@drawable/ic_password"
+        android:ems="10"
+        android:fontFamily="@font/balthazar"
+        android:hint="@string/hint_Contra"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreo"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtConfrimarContraseña"
+        android:layout_width="324dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="396dp"
+        android:background="#DDDDDD"
+        android:drawableLeft="@drawable/ic_password"
+        android:ems="10"
+        android:fontFamily="@font/balthazar"
+        android:hint="@string/hint_Confrimar"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCrearContraseña"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnCrearCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/shapebtn"
+        android:backgroundTint="@color/Azul_Claro"
+        android:fontFamily="@font/balthazar"
+        android:hint="@string/btn_Crearcuenta"
+        android:text="@string/btn_Crearcuenta"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtConfrimarContraseña"
+        app:layout_constraintVertical_bias="0.327" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

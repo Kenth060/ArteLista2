@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/imgArtista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_artista"
+        android:layout_marginLeft="@dimen/margen8"
+        app:layout_constraintBottom_toBottomOf="@id/tvNombreArtista"
+        app:layout_constraintLeft_toLeftOf="parent">
+    </ImageView>
+    <TextView
+        android:id="@+id/tvNombreArtista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/strNombreArtista"
+        android:textSize="@dimen/tamtexto2"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/margen8"
+        app:layout_constraintLeft_toRightOf="@+id/imgArtista"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/tvCategoriaArtista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/strCategoriaArtista"
+        app:layout_constraintLeft_toRightOf="@+id/imgArtista"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombreArtista"
+        />
+    <TextView
+        android:id="@+id/tvPaisArtista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margen8"
+        android:text="@string/strPaisArtista"
+        android:paddingTop="@dimen/margen8"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tvNombreArtista"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tam1"
+        android:background="@color/gris"
+        android:layout_marginTop="@dimen/margen8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCategoriaArtista"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment_eventodet"
+    app:startDestination="@+id/navHome">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/abEventoDet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Azul_Claro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbEventoDet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/Theme.ArteLista"
+        tools:context=".view.ui.fragment_eventodet">
+
+        <ImageView
+            android:id="@+id/imgEventoDet"
+            android:layout_width="@dimen/margen7"
+            android:layout_height="@dimen/margen7"
+            android:background="@drawable/img_arte2"
+            android:layout_marginTop="@dimen/margen7"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:contentDescription="@string/StrArtista">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tvTituloEventoDet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Rafael Pérez"
+            android:textSize="@dimen/tamtexto2"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/imgEventoDet"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvCategoriaEventodet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strCiudad"
+            android:textColor="#012E8A"
+            android:textSize="@dimen/tamTexto5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTituloEventoDet"></TextView>
+
+        <TextView
+            android:id="@+id/tvHoraEventoDet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strAcercaDe"
+            android:textColor="@color/Dark_Purple"
+            android:textSize="@dimen/tamTexto5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCategoriaEventodet"></TextView>
+        <Button
+            android:id="@+id/btnAcercaDeEvento"
+            android:layout_width="@dimen/margen6"
+            android:layout_height="@dimen/margen6"
+            android:background="@drawable/ic_down"
+            app:layout_constraintTop_toBottomOf="@id/tvHoraEventoDet"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+        </Button>
+
+        <TextView
+            android:id="@+id/tvDescripcionEventodet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margen8"
+            android:padding="@dimen/margen8"
+            android:text="@string/strDescripcionQuienSoy"
+            android:textAlignment="center"
+            android:textColor="@color/Azul_Fondo"
+            android:textSize="@dimen/tamtexto1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnAcercaDeEvento"></TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

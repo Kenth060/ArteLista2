@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BeHappy</string>
+    <string name="Btn_Login">Log In</string>
+    <string name="hint_correo">  Email</string>
+    <string name="hint_Contra">  Password</string>
+    <string name="hint_Confrimar">  Confirm Password</string>
+    <string name="btn_Crearcuenta">Create Account</string>
+    <string name="strCrear">Create Account</string>
+    <string name="hint_Usuario">  Username</string>
+    <string name="hint_Contraseña">  Password</string>
+    <string name="btn_Crear">¿Don´t you have an account? Create one here.</string>
+    <string name="title_activity_menu">Activity_menu</string>
+    <string name="StrInicio">Home</string>
+    <string name="StrGaleria">Gallery</string>
+    <string name="StrEvento">Event</string>
+    <string name="StrEventoDet">Event Location</string>
+    <string name="StrUbicacionEventoDet">Event Location Information</string>
+    <string name="StrArtista">Artist</string>
+    <string name="Tittle">Just Be Happy</string>
+    <string name="strNombreArtista">Rafael Pérez</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="strTituloArte">La Noche Mágica</string>
+    <string name="strLikeMeGusta">8 Me gusta</string>
+    <string name="strPrecioArte">1,200</string>
+    <string name="strMoneda">C$</string>
+
+    <!-- Pantalla galería detalle -->
+    <string name="transition_galeriadet">transicion_galeriadet</string>
+    <string name="strCategoriaGaleria">Arte en Oleo</string>
+    <string name="strDescripcionGaleria">Nací en la capital de Nicaragua, mi pasión ha sido la pintura en Oleo, siendo mis favoritas las pinturas en oleo. Durante niño me inicié en la pintura de forma nata, luego fui perfeccionando mi técnica en escuelas profesionales. Tengo mas de 10 años de experiencia en pintura.</string>
+
+    <!-- Pantalla evento -->
+    <string name="strTituloEvento">Exposición Primavera en Oleo</string>
+    <string name="strCategoriaEvento">Arte en Oleo</string>
+    <string name="strUbicacionEvento">Palacio de la Cultura</string>
+    <string name="strDireccionEvento">Distrito 1. Managua, Nicaragua</string>
+    <string name="strSitioWebEvento">www.uni.edu.ni</string>
+    <string name="strTelefonoEvento">22705126</string>
+    <string name="strCategoriaArtista">Artista plastico</string>
+    <string name="strPaisArtista">Nicaragua</string>
+    <string name="strCiudad">Nicaragua</string>
+    <string name="strAcercaDe">Acerca de mi</string>
+
+
+    <string name="strDescripcionQuienSoy">Naci en la capital de Nicaragua, mi pasion ha sido la pintura en Oleo, siendo mi técnica en escuela profesionales. Tengo mas de 10 años de experiencia en pintura.</string>
+    <string name="strCuentaTwitter">\@glenda</string>
+
+</resources>

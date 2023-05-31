@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navMenuArteLista"
+    app:startDestination="@+id/navHome">
+
+    <fragment
+        android:id="@+id/navHome"
+        android:name="com.example.artelista.ui.inicio.InicioFragment"
+        android:label="@string/StrInicio"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/navGaleria"
+        android:name="com.example.artelista.ui.galeria.GaleriaFragment"
+        android:label="@string/StrGaleria"
+        tools:layout="@layout/fragment_galeria" >
+        <action
+            android:id="@+id/action_navGaleria_to_fragment_galeriadetalle"
+            app:destination="@id/fragment_galeriadetalle" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navEvento"
+        android:name="com.example.artelista.ui.evento.EventoFragment"
+        android:label="@string/StrEvento"
+        tools:layout="@layout/fragment_evento" >
+        <action
+            android:id="@+id/action_navEvento_to_fragment_ubicacion"
+            app:destination="@id/fragment_ubicacion" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navArtista"
+        android:name="com.example.artelista.ui.artista.ArtistaFragment"
+        android:label="@string/StrArtista"
+        tools:layout="@layout/fragment_artista" >
+        <action
+            android:id="@+id/action_navArtista_to_fragment_artistadet"
+            app:destination="@id/fragment_artistadet" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_galeriadetalle"
+        android:name="com.example.artelista.ui.fragment_galeriadetalle"
+        android:label="fragment_galeriadetalle"
+        tools:layout="@layout/fragment_galeriadetalle" />
+    <fragment
+        android:id="@+id/fragment_ubicacion"
+        android:name="com.example.artelista.ui.fragment_ubicacion"
+        android:label="fragment_ubicacion"
+        tools:layout="@layout/fragment_ubicacion" >
+        <action
+            android:id="@+id/action_fragment_ubicacion_to_fragment_ubicaciondet"
+            app:destination="@id/fragment_ubicaciondet" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_ubicaciondet"
+        android:name="com.example.artelista.ui.fragment_ubicaciondet"
+        android:label="fragment_ubicaciondet"
+        tools:layout="@layout/fragment_ubicaciondet" />
+    <fragment
+        android:id="@+id/fragment_artistadet"
+        android:name="com.example.artelista.ui.fragment_artistadet"
+        android:label="fragment_artistadet"
+        tools:layout="@layout/fragment_artistadet" />
+    <fragment
+        android:id="@+id/fragment_eventodet"
+        android:name="com.example.artelista.ui.fragment_eventodet"
+        android:label="fragment_eventodet"
+        tools:layout="@layout/fragment_eventodet" />
+
+
+</navigation>
